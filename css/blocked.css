@@ -1,0 +1,46 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.container-fluid,
+footer.container-fluid {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 5px;
+}
+
+footer.container-fluid a {
+  font-size: 13px;
+  line-height: 13px;
+}
+
+footer.container-fluid .heart,
+footer.container-fluid .brand {
+  height: 20px;
+}
+
+.circle {
+  border-color: rgba(204, 0, 0, 0.5)
+}
+
+.status {
+  color: #cc0000;
+  font-size: 25px;
+  letter-spacing: 6px;
+  background: #cecece;
+  display: inline-block;
+  padding: 2px 5px;
+}
+
+.warning h3 {
+  font-size: 1.5rem;
+}

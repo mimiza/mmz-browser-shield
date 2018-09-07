@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Share+Tech+Mono');
+
+:root {
+	--main-color: #0984e3;
+	--main-bg: #2d3436;
+	--light: rgba(255,255,255,0.5);
+	--dark: rgba(0,0,0,0.5);
+	--green: #2ecc71;
+	--gray: #bdc3c7;
+	--red: #cc0000;
+}
+
+body {
+	background: var(--main-bg);
+	width: 300px;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+}
+
+.circle {
+	margin-bottom: 15px;
+	padding: 20px;
+	border-radius: 50%;
+	border: var(--light) 2px solid;
+}
+
+.circle .symbol {
+	width: 80px;
+}
+
+.status {
+	font-weight: bold;
+	font-family: 'Share Tech Mono', monospace;
+	color: var(--light);
+}
+
+.activated {
+	color: var(--green);
+	border-color: var(--green);
+}
+
+.activated.blocked {
+	color: var(--red);
+	border-color: var(--red);
+}
+
+button {
+	font-family: 'Share Tech Mono', monospace;
+}
+
+header {
+	background: var(--dark);
+	padding: 5px 15px;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	margin: 0;
+	letter-spacing: 3px;
+}
+
+#version {
+	font-family: 'Share Tech Mono', monospace;
+}
+
+main {
+	padding: 15px 0px;
+}
+
+footer {
+	background: var(--dark);
+	padding: 5px;
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+footer a:link {
+	color: white;
+	text-decoration: none;
+	opacity: 0.5;
+	-webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+footer a:hover {
+	opacity: 1;
+}
+
+footer .heart {
+	height: 14px;
+}
+
+footer .brand {
+	height: 16px;
+}

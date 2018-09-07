@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Browser Shield</title>
+	<link rel="stylesheet" type="text/css" href="/lib/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/css/popup.css" />
+</head>
+<body>
+	<header class="container-fluid align-middle">
+		<div class="row">
+			<div class="col-8 text-uppercase text-left"><h1>Browser Shield</h1></div>
+			<div class="col text-right">v<span id="version"></span></div>
+		</div>
+	</header>
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col text-center">
+				<span class="circle d-inline-block">
+					<img class="symbol" src="/img/symbol-deactivated.png">
+				</span>
+				<p class="status text-uppercase">Deactivated</p>
+				<button id="toggle" type="button" class="btn btn-success text-uppercase">Activate Shield</button>
+			</div>
+		</div>
+	</main>
+	<footer class="container-fluid text-center text-uppercase">
+		<div class="row">
+			<div class="col">
+				<a href="https://www.mimiza.com/mmz-browser-shield/" target="_blank">
+					<span class="align-middle">Created with</span> <img class="heart" src="/img/heart.svg" alt="love"> <span class="align-middle">by</span> <img class="brand" src="/img/brand.svg" alt="MIMIZA">
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="/lib/jquery.min.js"></script>
+	<script src="/lib/bootstrap.min.js"></script>
+	<script src="/js/popup.js"></script>
+</body>
+</html>

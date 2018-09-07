@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Browser Shield</title>
+	<link rel="stylesheet" type="text/css" href="/lib/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/css/popup.css" />
+	<link rel="stylesheet" type="text/css" href="/css/blocked.css" />
+</head>
+<body>
+	<header class="container-fluid align-middle">
+		<div class="row">
+			<div class="col-12 text-uppercase text-center"><h1>Browser Shield</h1></div>
+		</div>
+	</header>
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col text-center d-flex flex-column justify-content-center align-items-center">
+				<span class="circle d-inline-block">
+					<img class="symbol" src="/img/symbol-blocked.png">
+				</span>
+				<p class="status text-uppercase">WEBSITE BLOCKED</p>
+				<div class="warning mt-3">
+					<h3 class="mb-3">Visiting this site might harm your computer!</h3>
+					<p class="text-left">
+						<b>URL: '<a id="siteUrl"></a>'.</b><br>
+						To protect you, we have blocked this potentially harmful content.<br>
+						To view this site, add it to the exception.
+					</p>
+				</div>
+				<div class="col-6 text-left d-flex flex-column justify-content-center align-items-center">
+					<button type="button" class="btn btn-success mb-3" id="btn-back">Back to safety.</button>
+					<span>OR</span>
+					<button type="button" class="btn btn-danger mt-3 mb-3" id="btn-add-whitelist-5">Add to Whitelist for 5 minutes and continue</button>
+					<button type="button" class="btn btn-danger mb-3" id="btn-add-whitelist-30">Add to Whitelist for 30 minutes and continue</button>
+					<button type="button" class="btn btn-danger" id="btn-add-whitelist">Add to Whitelist permanently and continue</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="container-fluid text-center text-uppercase">
+		<div class="row">
+			<div class="col">
+				<a href="https://www.mimiza.com/mmz-browser-shield/" target="_blank">
+					<span class="align-middle">Created with</span> <img class="heart" src="/img/heart.svg" alt="love"> <span class="align-middle">by</span> <img class="brand" src="/img/brand.svg" alt="MIMIZA">
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="/lib/jquery.min.js"></script>
+	<script src="/lib/bootstrap.min.js"></script>
+	<script src="/js/blocked.js"></script>
+</body>
+</html>
