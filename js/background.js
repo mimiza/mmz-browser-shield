@@ -30,7 +30,8 @@ const checkTabs = () => {
     browser.tabs.query({}, (tabs) => {
         tabs.forEach(tab => {
             let hostname = new URL(tab.url).hostname;
-            if(blacklist.indexOf(hostname) > -1) {
+            if(hostname.slice(0, 4) == 'www.') hostname = hostname.slice(4, hostname.length);
+            if(blacklist.indexOf(`"${hostname}"`) > -1) {
                 browser.tabs.update(tab.id, { url: `${blockedPage}?site=${tab.url}` });
             } else if(hostname == id) {
                 let site = new URL(tab.url).search.slice(6);
@@ -107,7 +108,7 @@ browser.webRequest.onBeforeRequest.addListener(
         let tabId = request.tabId;
         let hostname = new URL(request.url).hostname;
         let blockedPage = browser.extension.getURL('html/blocked.html');
-        if(running && frameId == 0 && blacklist && blacklist.indexOf(hostname) > -1) {
+        if(running && frameId == 0 && blacklist && blacklist.indexOf(`"${hostname}"`) > -1) {
             let now = new Date().valueOf();
             if(!whitelist || !whitelist[hostname] || whitelist[hostname] < now) {
                 return { redirectUrl: `${blockedPage}?site=${request.url}` };
