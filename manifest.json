@@ -1,5 +1,5 @@
 {
-	"update_url": "https://clients2.google.com/service/update2/crx",
+    "update_url": "https://clients2.google.com/service/update2/crx",
     "name": "Browser Shield",
     "description": "Block hidden coin miners using your computer ressources, keep you safe from malwares.",
     "version": "1.2",
